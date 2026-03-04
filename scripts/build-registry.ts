@@ -15,7 +15,7 @@
 
 import { existsSync, mkdirSync, writeFileSync } from "node:fs";
 import { join, resolve } from "node:path";
-import { REGISTRY } from "../lib/registry";
+import { registry as REGISTRY } from "../lib/registry";
 import type { ComponentCategory } from "../lib/registry-types";
 
 // ---------------------------------------------------------------------------

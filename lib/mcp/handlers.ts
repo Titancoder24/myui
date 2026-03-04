@@ -81,7 +81,7 @@ function handleSearchComponents(
   const category = args.category as ComponentCategory | undefined;
   const framework = args.framework as string | undefined;
 
-  const results = searchComponents(query, { category, framework });
+  const results = searchComponents(query, category, framework);
 
   if (results.length === 0) {
     return textResult(

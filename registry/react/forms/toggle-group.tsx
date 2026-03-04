@@ -49,12 +49,13 @@ const toggleGroupItemVariants = cva(
 /*  ToggleGroup                                                               */
 /* -------------------------------------------------------------------------- */
 
-interface ToggleGroupProps
-  extends React.ComponentPropsWithoutRef<typeof RadixToggleGroup.Root>,
-    VariantProps<typeof toggleGroupItemVariants> {
-  variant?: "default" | "outline";
-  size?: "sm" | "md" | "lg";
-}
+type ToggleGroupProps = React.ComponentPropsWithoutRef<
+  typeof RadixToggleGroup.Root
+> &
+  VariantProps<typeof toggleGroupItemVariants> & {
+    variant?: "default" | "outline";
+    size?: "sm" | "md" | "lg";
+  };
 
 const ToggleGroup = React.forwardRef<
   React.ElementRef<typeof RadixToggleGroup.Root>,

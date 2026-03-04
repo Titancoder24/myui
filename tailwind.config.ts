@@ -7,6 +7,25 @@ const config: Config = {
     "./registry/**/*.{ts,tsx}",
   ],
   theme: {
+    fontFamily: {
+      sans: [
+        "var(--font-sans, Inter)",
+        "-apple-system",
+        "BlinkMacSystemFont",
+        "Segoe UI",
+        "Roboto",
+        "Helvetica Neue",
+        "Arial",
+        "sans-serif",
+      ],
+      mono: [
+        "SF Mono",
+        "Fira Code",
+        "Fira Mono",
+        "Roboto Mono",
+        "monospace",
+      ],
+    },
     extend: {
       colors: {
         border: "hsl(var(--border))",
